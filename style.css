@@ -1,0 +1,353 @@
+@import url('https://fonts.cdnfonts.com/css/dread-ringer');
+/* font-family: 'Dread Ringer 3D', sans-serif;
+   font-family: 'Dread Ringer', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/* NAV */
+.container_nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: rgba(14, 132, 0, 1);
+    background-image: linear-gradient(0deg, rgb(6, 51, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    position: fixed;
+    z-index: 3;
+    border: solid #48bd05de 0.2px;
+}
+.logo img{
+    height: 2.5rem;
+    transition: all 0.3s;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+.nav_links{
+    list-style: none;
+    font-family: 'Dread Ringer', sans-serif;
+    filter: drop-shadow(2px 2px 3px #48bd05de);
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+.nav_links a:hover{
+    color: green;
+    filter: drop-shadow(2px 2px 3px white);
+}
+
+/* HERO */
+.hero{
+    margin: 0;
+    padding: 0.1;
+    background-color: rgba(14, 132, 0, 1);
+    background-image: linear-gradient(0deg, rgba(14, 132, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg, hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%));
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_principal{
+    font-family: 'Dread Ringer 3D', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: white;
+    filter: drop-shadow(2px 2px 3px #48bd05de);
+    text-align: center;
+    margin: 90px;
+}
+.titulo_principal a button{
+    background: green;
+    padding: 10px 50px;
+    font-family: 'Dread Ringer', sans-serif;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: solid 3px black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.titulo_principal a button:hover{
+    background: aliceblue;
+    color: green;
+}
+.hongos_hero{
+    width: 90%;
+    padding: 0.1px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.hongos_hero div img{
+    width: auto;
+    height: 300px;
+    cursor: pointer;
+    filter: drop-shadow(4px 3px 4px);
+    transition: all 0.3s;
+}
+.hongos_hero div img:hover{
+    transform: scale(1.2);
+}
+/* HONGOS */
+.container_hongos{
+    height: auto;
+    margin: 0;
+    padding: 0.1;
+    background-image: repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg, hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 20px;
+}
+.titulo_hongos{
+    width: 100%;
+    background-image: linear-gradient( 0deg, rgb(0, 0, 0) 92%, rgba(14, 132, 0, 1) 100%);
+    font-family: 'Dread Ringer', sans-serif;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(2px 2px 3px #48bd05de);
+    font-size: 30px;
+}
+.img_hongos{
+    width: 40%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.img_hongos img{
+    width: auto;
+}
+.desc_hongos{
+    width: 30%;
+    margin: 30px;
+    padding: 30px;
+    border: solid 2px lightgreen;
+    filter: drop-shadow(4px 3px 4px green);
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: white;
+}
+
+/* TRIO */
+.container_trio_principal{
+    margin: 0;
+    padding: 0.1px;
+    background-image: repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg, hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 30px;
+}
+.titulo_trio{
+    width: 100%;
+    margin: 30px;
+    background-image: linear-gradient( 0deg, rgb(0, 0, 0) 92%, rgba(14, 132, 0, 1) 100%);
+    font-family: 'Dread Ringer', sans-serif;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(2px 2px 3px #48bd05de);
+    font-size: 30px;
+}
+.TRIO{
+    width: 26%;
+    padding: 20px;
+    background-color: rgba(12, 245, 70, 0.473);
+    position: relative;
+    border: solid 2px lightgreen;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.img_hongo img{
+    width: 80%;
+    filter: drop-shadow(4px 3px 4px);
+}
+.nombre_hongo{
+    font-family: 'Dread Ringer', sans-serif;
+    color: white;
+    font-size: 2rem;
+    filter: drop-shadow(2px 2px 3px #000000de);
+}
+.parrafo_hongo{
+    margin: 30px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: justify;
+    filter: drop-shadow(1px 1px 1px);
+}
+.caracteristicas_hongo{
+    width: 0%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .1s all;
+}
+.caracteristicas_hongo h4{
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    filter: drop-shadow(1px 1px 1px);
+}
+.caracteristicas_hongo ul li{
+    font-size: 1.5rem;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    text-align: justify;
+    filter: drop-shadow(1px 1px 1px);
+}
+.TRIO:hover .caracteristicas_hongo{
+    width: 100%;
+    height: 100%;
+}
+
+/* MUNDO */
+.container_mundo{
+    margin: 0;
+    padding: 0.1;
+    background-image: repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg, hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+}
+.titulo_mundo{
+    width: 100%;
+    margin: 30px;
+    background-image: linear-gradient( 0deg, rgb(0, 0, 0) 92%, rgba(14, 132, 0, 1) 100%);
+    font-family: 'Dread Ringer', sans-serif;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(2px 2px 3px #48bd05de);
+    font-size: 30px;
+}
+.box_mundo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+.desc_mundo{
+    width: 40%;
+    margin: 40px;
+    padding: 30px;
+    border: solid 2px lightgreen;
+    filter: drop-shadow(4px 3px 4px green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: white;
+}
+.img_mundo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_mundo img{
+    width: 70%;
+    filter: drop-shadow(4px 3px 4px rgba(70, 230, 70, 0.534));
+    transition: all 2s;
+}
+.img_mundo img:hover{
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+.container_footer{
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    border: solid #48bd05de 0.5px;
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(14, 132, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg, hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%));
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista_footer{
+    margin: 0;
+    padding: 0.1px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    filter: drop-shadow(2px 2px 3px #48bd05de);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.lista_footer div ul{
+    list-style: none;
+}
+.lista_footer  div ul li{
+    display: inline-block;
+    margin: 10px 30px;
+}
+.text_footer{
+    width: 100%;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.863);
+    filter: drop-shadow(1px 1px 1px);
+    text-align: center;
+
+}
+.hongos_footer{
+    width: 100%;
+    padding: 0.1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hongos_footer img{
+    width: 7%;
+    margin-bottom: -30px;
+}
+.firma{
+    width: 15%;
+    align-self: center;
+    text-align: center;
+    height: 2rem;
+    color: white;
+    filter: drop-shadow(1px 1px 1px);
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    
+}
+.img_firma img{
+    width: 50%;
+}
